@@ -76,7 +76,6 @@ public class PlaceOnPlaneNewInputSystem : MonoBehaviour
 		{
 			// Raycast hits are sorted by distance, so the first hit means the closest.
 			var hitPose = hits[0].pose;
-
 			// Check if there is already spawned object. If there is none, instantiated the prefab.
 			if (spawnedObject == null)
 			{
@@ -87,13 +86,13 @@ public class PlaceOnPlaneNewInputSystem : MonoBehaviour
 				// Change the spawned object position and rotation to the touch position.
 				//spawnedObject.transform.position = hitPose.position;
 				//spawnedObject.transform.rotation = hitPose.rotation;
-				return;
+				//return;
 			}
 
 			// To make the spawned object always look at the camera. Delete if not needed.
 			Vector3 lookPos = Camera.main.transform.position - spawnedObject.transform.position;
 			lookPos.y = 0;
-			spawnedObject.transform.rotation = Quaternion.LookRotation(lookPos);
+			spawnedObject.transform.rotation = Quaternion.LookRotation(lookPos,Vector3.up);
 		}
 	}
 
