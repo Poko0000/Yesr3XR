@@ -7,8 +7,9 @@ public class Items : MonoBehaviour
 	
 	[SerializeField] TextMeshProUGUI _name;
 	[SerializeField] Image _image;
-	
-	public ItemsData _itemsData;
+    [SerializeField] ItemsData _itemsData;
+
+	public ItemsData ItemsData{ get => _itemsData ; private set => value = _itemsData; }
 	
 	public void SetItemsData(ItemsData itemsData)
 	
@@ -17,7 +18,17 @@ public class Items : MonoBehaviour
 		_name.text = itemsData.ItemsName;
 		_image = itemsData.ItemsImage;
 	}
-	
-	
+
+    private void OnButtomClick()
+    {
+		ItemsManager.ItemEvent += AddItem;
+    }
+
+    public void AddItem()
+	{
+		Debug.Log("onClick");
+    }
+
+
 }
 	

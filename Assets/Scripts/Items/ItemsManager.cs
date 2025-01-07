@@ -1,9 +1,8 @@
 using System;
 using System.Collections.Generic;
-using NUnit.Framework.Internal.Execution;
 using UnityEngine;
 using UnityEngine.EventSystems;
-
+using Random = UnityEngine.Random;
 
 public class ItemsManager : MonoBehaviour
 {
@@ -13,18 +12,25 @@ public class ItemsManager : MonoBehaviour
 	[SerializeField] GameObject _itemsPrefabs;
 	
 	[SerializeField] Transform _itemsPosition;
+
+	public static Action ItemEvent;
 	
-	public void InitialItems()	
+	public void GenarateItems()	
 	{				
 		foreach(ItemsData itemsData in _itemsLists)
 		
 		{			
 			GameObject _item = Instantiate(_itemsPrefabs,_itemsPosition);
 			Items items = _item.GetComponent<Items>();
-			items.SetItemsData(itemsData);
+            items.SetItemsData(itemsData);
 		}		
 	}
-	
-					
-	
+
+	public ItemsData GetRandItems()
+	{
+        var rand = new System.Random();
+		int randNum = rand.Next(0, _itemsLists.Count);
+		return _itemsLists[randNum];
+    }
+
 }
