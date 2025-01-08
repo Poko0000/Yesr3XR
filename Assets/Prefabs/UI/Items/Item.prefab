@@ -322,8 +322,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _name: {fileID: 6398406310424424445}
   _image: {fileID: 2307843931006509624}
-  _UsedItems: {fileID: 2565025213814544162}
-  _usedItemsTransform: {fileID: 0}
   _itemsData: {fileID: 0}
 --- !u!1 &3266071693407917929
 GameObject:
