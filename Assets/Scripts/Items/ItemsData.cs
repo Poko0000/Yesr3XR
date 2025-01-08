@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class ItemsData : ScriptableObject
 {
 	[SerializeField] string _itemsName;	
-	[SerializeField] Image _itemsImage;
+	[SerializeField] Sprite _itemsImage;
 	
 	public string ItemsName
 	{
@@ -14,7 +14,7 @@ public class ItemsData : ScriptableObject
 		private set => _itemsName = value;
 	} 
 	
-	public Image ItemsImage
+	public Sprite ItemsImage
 	{
 		get => _itemsImage;
 		private set => _itemsImage = value;

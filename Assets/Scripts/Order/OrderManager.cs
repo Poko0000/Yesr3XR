@@ -12,9 +12,9 @@ public class OrderManager : MonoBehaviour
 
     public void GenarateOrder(List<ItemsData> itemsOrderList)
     {
-        List<ItemsData>  _itemsOrder = itemsOrderList;
+        //List<ItemsData>  _itemsOrder = itemsOrderList;
 
-        foreach (ItemsData itemsOrder in _itemsOrder)
+        foreach (ItemsData itemsOrder in itemsOrderList)
         {
             GameObject _item = Instantiate(_orderPrefabs, _targetPosition);
             IOrder order = _item.GetComponent<IOrder>();

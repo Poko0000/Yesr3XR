@@ -16,7 +16,7 @@ public class Items : MonoBehaviour
 	{
 		_itemsData = itemsData;
 		_name.text = itemsData.ItemsName;
-		_image = itemsData.ItemsImage;
+		_image.sprite = itemsData.ItemsImage;
 	}
 
     private void OnButtomClick()

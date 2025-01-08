@@ -22,15 +22,15 @@ public class ItemsManager : MonoBehaviour
 		{			
 			GameObject _item = Instantiate(_itemsPrefabs,_itemsPosition);
 			Items items = _item.GetComponent<Items>();
-            items.SetItemsData(itemsData);
+			items.SetItemsData(itemsData);
 		}		
 	}
 
 	public ItemsData GetRandItems()
 	{
-        var rand = new System.Random();
+		var rand = new System.Random();
 		int randNum = rand.Next(0, _itemsLists.Count);
 		return _itemsLists[randNum];
-    }
+	}
 
 }
