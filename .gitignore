@@ -72,3 +72,5 @@ crashlytics-build.properties
 /[Aa]ssets/[Ss]treamingAssets/aa.meta
 /[Aa]ssets/[Ss]treamingAssets/aa/*
 Assets/Arts/TMPFonts.meta
+Assets/Arts/TMPFonts/NotoSansTC-Regular SDF.asset
+Assets/Arts/TMPFonts/NotoSansTC-Black SDF.asset
