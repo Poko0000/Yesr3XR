@@ -3,36 +3,22 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
-	[SerializeField] GameObject ItemsManager;
-	[SerializeField] GameObject OrderManager;
-	ItemsManager _itemsManager;
-	OrderManager _orderManager;
-	
-	public List<ItemsData> OrderItems;
-	[SerializeField] int _itemNum = 3;
+	[SerializeField] OrderSystem orderSystem;
 	
 	void Awake()
-	{
-		_itemsManager = ItemsManager.GetComponent<ItemsManager>();
-		_orderManager = OrderManager.GetComponent<OrderManager>();
+	{				
+		orderSystem.Initialize();
 	}
+	
 	// Start is called once before the first execution of Update after the MonoBehaviour is created
 	void Start()
 	{      
-		global::ItemsManager.ItemEvent?.Invoke();
-		_itemsManager.GenarateItems();		
-			
-		for(int i = 0; i <_itemNum; i++)		
-		{
-			OrderItems.Add(_itemsManager.GetRandItems());
-		}
-		
-		_orderManager.GenarateOrder(OrderItems);
+		orderSystem.LogicStart();
 	}
 
 	// Update is called once per frame
 	void Update()
 	{
-		
-	}
+		orderSystem.LogicUpdate();
+	}		
 }

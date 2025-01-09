@@ -35,6 +35,7 @@ public class PlaceOnPlaneNewInputSystem : MonoBehaviour
 	/// The instantiated object.
 	/// </summary>
 	GameObject spawnedObject;
+	[SerializeField] GameObject _menuCanvas;
 
 	/// <summary>
 	/// The input touch control.
@@ -80,6 +81,7 @@ public class PlaceOnPlaneNewInputSystem : MonoBehaviour
 			if (spawnedObject == null)
 			{
 				spawnedObject = Instantiate(placedPrefab, hitPose.position, hitPose.rotation);
+				_menuCanvas.SetActive(true);				
 			}
 			else
 			{
@@ -104,5 +106,5 @@ public class PlaceOnPlaneNewInputSystem : MonoBehaviour
 	private void OnDisable()
 	{
 		controls.control.Disable();
-	}
+	}	
 }
