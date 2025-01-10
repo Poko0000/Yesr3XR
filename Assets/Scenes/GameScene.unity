@@ -1801,6 +1801,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3375573532670941509, guid: 9ff5430f53287f5408c296088eeb36c7,
+        type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: -3881325786822513647, guid: b43637ff01b206549804857f8e1e7e81,
+        type: 2}
+    - target: {fileID: 3375573532670941509, guid: 9ff5430f53287f5408c296088eeb36c7,
+        type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3990097539526626851, guid: 9ff5430f53287f5408c296088eeb36c7,
         type: 3}
       propertyPath: _menuCanvas
@@ -1830,6 +1841,23 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: GameMenuCanvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 8332880670455098424, guid: 9ff5430f53287f5408c296088eeb36c7,
+        type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: b43637ff01b206549804857f8e1e7e81,
+        type: 2}
+    - target: {fileID: 8332880670455098424, guid: 9ff5430f53287f5408c296088eeb36c7,
+        type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: -3881325786822513647, guid: b43637ff01b206549804857f8e1e7e81,
+        type: 2}
+    - target: {fileID: 8332880670455098424, guid: 9ff5430f53287f5408c296088eeb36c7,
+        type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8879862232940772856, guid: 9ff5430f53287f5408c296088eeb36c7,
         type: 3}
