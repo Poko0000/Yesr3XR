@@ -66,10 +66,10 @@ public class OrderSystem : MonoBehaviour
 		_menuCanvas.SetActive(false);
 		_playerCanvas.SetActive(true);
 		_orderCanvas.SetActive(true);
-		
-		ItemsManager.ItemEvent?.Invoke();
-		Score = 0;	
-		_itemsManager.GenarateItems();	
+
+        ItemsManager.ItemEvent?.Invoke();
+        _itemsManager.GenarateItems();
+        Score = 0;				
 		OrderItems(_itemNum);
 	}
 	

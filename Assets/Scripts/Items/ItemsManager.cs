@@ -14,8 +14,8 @@ public class ItemsManager : MonoBehaviour
 	[SerializeField] Transform _itemsPosition;
 
 	public static Action ItemEvent;
-	
-	public void GenarateItems()	
+
+    public void GenarateItems()	
 	{				
 		foreach(ItemsData itemsData in _itemsLists)
 		
