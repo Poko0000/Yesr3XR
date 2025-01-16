@@ -65,7 +65,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: New Text
+  m_text: "\u4E00\u4E8C\u4E09"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 79b9a4a3c25ed6841999bccc9858980a, type: 2}
   m_sharedMaterial: {fileID: -2073138010678958849, guid: 79b9a4a3c25ed6841999bccc9858980a,
@@ -200,6 +200,7 @@ MonoBehaviour:
   _orderItemName: {fileID: 1430293605037294563}
   _orderImage: {fileID: 8004927515470005100}
   _orderBackgaund: {fileID: 9032197329511265930}
+  _orderData: {fileID: 0}
   _isFinish: 0
 --- !u!1 &7096311743920291845
 GameObject:
