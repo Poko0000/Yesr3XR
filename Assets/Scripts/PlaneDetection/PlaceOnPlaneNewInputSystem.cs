@@ -36,6 +36,8 @@ public class PlaceOnPlaneNewInputSystem : MonoBehaviour
 	/// </summary>
 	GameObject spawnedObject;
 	[SerializeField] GameObject _menuCanvas;
+    [SerializeField] GameObject _orderCanvas;
+    [SerializeField] GameObject _playerCanvas;
     [SerializeField] GameObject _text;
 
     /// <summary>
@@ -116,5 +118,14 @@ public class PlaceOnPlaneNewInputSystem : MonoBehaviour
 	private void OnDisable()
 	{
 		controls.control.Disable();
-	}	
+	}
+
+    public void SetObjectPosition()
+    {
+        spawnedObject.SetActive(false);
+        _menuCanvas.SetActive(false);
+        _orderCanvas.SetActive(false);
+        _playerCanvas.SetActive(false);
+        _text.SetActive(true);
+    }
 }

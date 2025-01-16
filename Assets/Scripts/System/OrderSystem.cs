@@ -62,15 +62,18 @@ public class OrderSystem : MonoBehaviour
 	
 	{
 		IsGameOver = false;
-		
-		_menuCanvas.SetActive(false);
+        
+        _menuCanvas.SetActive(false);
 		_playerCanvas.SetActive(true);
 		_orderCanvas.SetActive(true);
 
         ItemsManager.ItemEvent?.Invoke();
         _itemsManager.GenarateItems();
-        Score = 0;				
-		OrderItems(_itemNum);
+
+        Score = 0;
+        _orderManager.ResetOrder();
+        Orders.Clear();
+        OrderItems(_itemNum);
 	}
 	
 	public void GameOver()
